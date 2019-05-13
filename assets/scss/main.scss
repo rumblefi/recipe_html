@@ -121,6 +121,7 @@ span.select2-selection.select2-selection--single {
 
 	&__container{
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
 	}
 
@@ -130,7 +131,7 @@ span.select2-selection.select2-selection--single {
 
 }
 
-.index-title{
+.h1{
 	font-size: 32px;
 	margin-bottom: 25px;
 }
@@ -193,7 +194,7 @@ span.select2-selection.select2-selection--single {
 	border: none;
 	background-color: transparent;
 	border-radius: 4px;
-	transition: 0.3s background-color;
+	transition: 0.3s background-color, 0.3s color;
 	color: #fff;
 	cursor: pointer;
 
@@ -221,6 +222,108 @@ span.select2-selection.select2-selection--single {
 			background-color: #c82333;
 		}
 
+	}
+
+	&--3{
+		 color: #007bff;
+
+		 &:hover{
+			 color: #0056b3;
+		 }
+
+	}
+
+}
+
+.form{
+
+	&__body{
+		margin-bottom: 30px;
+	}
+
+	&__partial{
+		margin-bottom: 20px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+	}
+
+	&__label{
+		display: flex;
+		margin-bottom: 5px;
+	}
+
+	&__field{
+		display: flex;
+		width: 100%;
+		height: 38px;
+		border-radius: 4px;
+		padding-left: 12px;
+		padding-right: 12px;
+		font-size: 14px;
+		color: #495057;
+		border: 1px solid rgba(0,0,0,.15);
+		transition: 0.3s border-color;
+
+		&:focus{
+			border-color: #80bdff;
+		}
+
+		&--textarea{
+			height: 80px;
+			resize: none;
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+
+	}
+
+	&__ingidient-wrapper{
+		position: relative;
+		display: flex;
+		align-items: center;
+		margin-bottom: 5px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+	}
+
+	&__ingidient-close{
+		position: absolute;
+		right: -40px;
+		width: 18px;
+		height: 18px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url('../img/icons/close.svg');
+		cursor: pointer;
+		opacity: 0;
+		pointer-events: none;
+
+		&.is-shown{
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+	}
+
+	&__buttons{
+		display: flex;
+		align-items: center;
+	}
+
+	&__ingidient-button{
+		font-size: 12px;
+		height: 32px;
+		padding: 0 10px;
+	}
+	
+	&__ingridients{
+		margin-bottom: 5px;
 	}
 
 }
