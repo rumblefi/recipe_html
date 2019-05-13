@@ -14,7 +14,7 @@ body {
 	position: relative;
 	font-family: $default-font;
 	overflow-x: hidden;
-	color: $body-color;
+	color: #212529;
 	line-height: normal;
 	padding: 0;
 	margin: 0;
@@ -339,4 +339,46 @@ label.error{
 	bottom: -20px;
 	font-size: 14px;
 	color: red;
+}
+
+.one-recipe{
+
+	&__img{
+		margin-bottom: 25px;
+	}
+
+	&__title{
+		color: #000;
+		font-size: 28px;
+		margin-bottom: 5px;
+	}
+
+	&__block{
+		margin-bottom: 20px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+	}
+
+	&-list{
+		padding-left: 18px;
+
+		&__item{
+			margin-bottom: 5px;
+			list-style-type: decimal;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+		}
+
+	}
+
+	&__button{
+		display: inline-flex;
+	}
+
 }
