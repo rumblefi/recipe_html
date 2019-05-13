@@ -238,11 +238,12 @@ span.select2-selection.select2-selection--single {
 .form{
 
 	&__body{
-		margin-bottom: 30px;
+		margin-bottom: 35px;
 	}
 
 	&__partial{
-		margin-bottom: 20px;
+		position: relative;
+		margin-bottom: 35px;
 
 		&:last-child{
 			margin-bottom: 0;
@@ -284,7 +285,11 @@ span.select2-selection.select2-selection--single {
 		position: relative;
 		display: flex;
 		align-items: center;
-		margin-bottom: 5px;
+		margin-bottom: 30px;
+
+		label.error{
+			display: block;
+		}
 
 		&:last-child{
 			margin-bottom: 0;
@@ -323,7 +328,15 @@ span.select2-selection.select2-selection--single {
 	}
 	
 	&__ingridients{
-		margin-bottom: 5px;
+		margin-bottom: 30px;
 	}
 
+}
+
+label.error{
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+	font-size: 14px;
+	color: red;
 }

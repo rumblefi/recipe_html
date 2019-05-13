@@ -39,6 +39,7 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'assets/libs/jquery/dist/jquery.min.js',
+		'assets/libs/jquery-validation/dist/jquery.validate.min.js',
 		'assets/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
