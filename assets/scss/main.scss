@@ -382,3 +382,28 @@ label.error{
 	}
 
 }
+
+.popup{
+	display: none;
+	width: 100%;
+	max-width: 500px;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 20px;
+
+	&__title{
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+
+	&__buttons{
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+}
+
+.fancybox-button{
+	display: none;
+}

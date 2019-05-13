@@ -1,5 +1,11 @@
 $(function () {
 
+	function getWindowWidth() {
+		return $(window).width()
+	}
+
+	$(".header").css('width', getWindowWidth())
+
 	function addIngredientInput() {
 		let numberClicked = 1
 
@@ -89,5 +95,25 @@ $(function () {
 			},
 		}
 	});
+
+	
+	function closePopup() {
+		return $.fancybox.close(true)
+	}
+
+	$('.js-close-popup').on('click', closePopup);
+
+
+	function showDeletePopup() {
+		return $.fancybox.open({
+			src  : '#delete-popup',
+			type : 'inline',
+			opts : {
+				touch: false
+			}
+		});
+	}
+
+	$('.js-delete-recipe').on('click', showDeletePopup);
 
 });
